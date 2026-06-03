@@ -1,0 +1,17 @@
+{
+  "name": "effect-cicd-demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@effect-cicd/dsl": "file:../effect-cicd/packages/dsl"
+  },
+  "scripts": {
+    "test": "bun test",
+    "demo:build": "bun run scripts/ci/build-application.ts",
+    "demo:clean": "bun run scripts/ci/reset-demo-state.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1"
+  }
+}
